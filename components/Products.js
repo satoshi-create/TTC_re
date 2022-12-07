@@ -5,6 +5,7 @@ import { ShoppingCart, ShoppingBag, Truck } from "react-feather";
 import Image from "next/image";
 import Link from "next/link";
 import products from "../libs/products";
+import Button from "./Button";
 const Products = () => {
   return (
     <section className="parts-grid section-padding">
@@ -41,6 +42,13 @@ const Products = () => {
                     </div>
                   );
                 })}
+                <Button
+                  value={{
+                    name: `${name}を見る`,
+                    path: "/",
+                    section: "products",
+                  }}
+                />
               </div>
             </React.Fragment>
           );
