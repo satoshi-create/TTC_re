@@ -4,6 +4,7 @@ import { ShoppingCart } from "react-feather";
 import Link from "next/link";
 import styles from "../styles/Services.module.css";
 import services from "../libs/Services";
+
 const Services = () => {
   return (
     <section className="parts-grid section-padding">
