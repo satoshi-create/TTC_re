@@ -3,21 +3,25 @@ import Title from "./Title";
 import { ShoppingCart } from "react-feather";
 import Link from "next/link";
 import styles from "../styles/Services.module.css";
+import services from "../libs/Services";
 const Services = () => {
   return (
     <section className="parts-grid section-padding">
       <Title title={"Services"} />
       <div className={styles.boxs}>
-        <div className={styles.box}>
-          <h3>販売</h3>
-          <ShoppingCart />
-          <p className={styles.desc}>
-            各種製造・分析装置の販売を行なっています。お気軽にご相談ください。
-          </p>
-          <Link href={"/"} className={styles.link}>
-            取り扱い商品一覧はコチラ
-          </Link>
-        </div>
+        {services.map((item, i) => {
+          const { name, icon, desc, path } = item;
+          return (
+            <div className={styles.box} key={i}>
+              <h3 className={styles.title}>{name}</h3>
+              <i className={styles.icon}>{icon}</i>
+              <p className={styles.desc}>{desc}</p>
+              <Link href={path} className={styles.link}>
+                取り扱い商品一覧はコチラ
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

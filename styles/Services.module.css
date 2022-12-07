@@ -1,0 +1,23 @@
+.boxs {
+  margin-top: 25px;
+}
+.box {
+  border: 1px solid var(--grey-light);
+  padding: 14px;
+  border-radius: 17px;
+}
+.title {
+  font-size: clamp(0.875rem, 0.2611rem + 2.6194vw, 1.9375rem);
+  font-family: var(--section-title-font);
+}
+.icon > svg {
+  width: 33px;
+  height: 33px;
+  color: var(--grey-light);
+}
+.desc {
+  font-size: clamp(0.875rem, 0.7305rem + 0.6163vw, 1.125rem);
+}
+.link {
+  font-size: clamp(0.625rem, 0.4444rem + 0.7704vw, 0.9375rem);
+}
