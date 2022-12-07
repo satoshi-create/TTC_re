@@ -5,7 +5,7 @@ import Link from "next/link";
 import Meta from "../libs/SiteMeta";
 import Image from "next/image";
 import NavLinks from "./NavLinks";
-import {contact} from "../libs/links"
+import { contact } from "../libs/links";
 
 const Header = () => {
   return (
@@ -24,7 +24,7 @@ const Header = () => {
         })}
       </div>
       <div className={styles.boxUnder}>
-        <div className={styles.title}>
+        <div className={styles.titleBox}>
           <Link href="/">
             <Image
               src={Meta.siteIcon}
@@ -33,13 +33,13 @@ const Header = () => {
               className={styles.favicon}
               alt={"favicon"}
             />
-            <p>{Meta.siteTitle}</p>
+            <p className={styles.siteTitle}>{Meta.siteTitle}</p>
           </Link>
         </div>
         <nav className={styles.nav}>
           <div className={styles.navSp}>
             <button className="btn">
-              <Menu />
+              <Menu className={styles.menuIcon} />
             </button>
           </div>
         </nav>

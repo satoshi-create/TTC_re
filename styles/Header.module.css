@@ -1,4 +1,20 @@
+.boxUpper svg {
+  width: clamp(1.25rem, 1.1055rem + 0.6163vw, 1.5rem);
+  height: clamp(1.25rem, 1.1055rem + 0.6163vw, 1.5rem);
+}
 .favicon {
-  width: 22px;
-  height: 22px;
+  width: clamp(1.25rem, 0.8889rem + 1.5408vw, 1.875rem);
+  height: clamp(1.25rem, 0.8889rem + 1.5408vw, 1.875rem);
+}
+.siteTitle {
+  font-size: clamp(1.3125rem, 0.6986rem + 2.6194vw, 2.375rem);
+}
+.menuIcon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .navSp {
+    display: none;
+  }
 }
