@@ -4,36 +4,47 @@ import Title from "./Title";
 import { ShoppingCart, ShoppingBag, Truck } from "react-feather";
 import Image from "next/image";
 import Link from "next/link";
+import products from "../libs/products";
 const Products = () => {
   return (
     <section className="parts-grid section-padding">
       <Title title={"Products"} />
       <section className={styles.sale}>
-        <div className={styles.productsTitle}>
-          <i>
-            <ShoppingCart />
-          </i>
-          <h3>販売製品情報</h3>
-        </div>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <Link href={"/"}>
-              <figure>
-                <Image
-                  src="/products_thumb.png"
-                  width={266}
-                  height={204}
-                  className={styles.heroImg}
-                  alt="hero-image"
-                />
-              </figure>
-              <p className={styles.name}>ケース洗浄装置</p>
-              <p className={styles.id}>3CLEatc-ult-Q9932</p>
-              <p className={styles.merker}>ACTOR</p>
-              <p className={styles.number}>1台</p>
-            </Link>
-          </div>
-        </div>
+        {products.map((item, i) => {
+          const { name, icon, productItems } = item;
+          return (
+            <React.Fragment key={i}>
+              <div className={styles.productsTitle}>
+                <i>{icon}</i>
+                <h3>{name}</h3>
+              </div>
+              <div className={styles.cards}>
+                {productItems.map((item, i) => {
+                  const { src, name, path, id, merker, number } = item;
+                  return (
+                    <div className={styles.card} key={i}>
+                      <Link href={path}>
+                        <figure>
+                          <Image
+                            src={src}
+                            width={266}
+                            height={204}
+                            className={styles.heroImg}
+                            alt="hero-image"
+                          />
+                        </figure>
+                        <p className={styles.name}>{name}</p>
+                        <p className={styles.id}>{id}</p>
+                        <p className={styles.merker}>{merker}</p>
+                        <p className={styles.number}>{number}</p>
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
+            </React.Fragment>
+          );
+        })}
       </section>
     </section>
   );
