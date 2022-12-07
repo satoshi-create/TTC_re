@@ -1,0 +1,15 @@
+.input {
+  /* width: 100vw; */
+  /* border: 1px solid var(--clr-light-gray); */
+  box-sizing: border-box;
+  color: var(--clr-light-gray);
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 17px;
+  padding: 13px 20px;
+  width: 100%;
+}
+.textarea {
+  height: 152px;
+}
