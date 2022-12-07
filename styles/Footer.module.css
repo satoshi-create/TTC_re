@@ -1,0 +1,36 @@
+.bcg {
+  background-color: var(--primary-green-01);
+  height: 480px;
+}
+
+.box {
+  color: var(--grey-dark);
+}
+.navtitle {
+  font-family: var(--section-title-font);
+  font-size: 18px;
+}
+.navname {
+  font-size: 16px;
+  font-family: var(--section-title-font);
+  font-weight: 600;
+}
+.siteTitle {
+  font-style: 18px;
+  font-family: var(--site-title-font);
+  color: var(--grey-dark);
+}
+.favicon {
+  width: clamp(1.25rem, 0.8889rem + 1.5408vw, 1.875rem);
+  height: clamp(1.25rem, 0.8889rem + 1.5408vw, 1.875rem);
+}
+.address {
+  font-size: 12px;
+  font-family: var(--section-title-font);
+  color: var(--grey-dark);
+}
+.copyright {
+  font-size: 8px;
+  font-family: var(--section-title-font);
+  color: var(--grey-light);
+}
