@@ -1,26 +1,62 @@
-html,
-body {
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --transition: all 0.3s linear;
+  --white: #ffffff;
+  --black: #1c1c1c;
+  --grey-dark: #7e7e7e;
+  --grey-light: #9e9e9e;
+  --accent-clr-01: #ff9692;
+  --primary-green-01: #57b9b0;
+  --primary-green-02: #7ac8be;
+  --primary-green-03: #cef0e4;
+  --site-title-font: "Josefin Sans", sans-serif;
+  --section-title-font: "Montserrat", sans-serif;
+  --text-font: "游明朝";
+  --catch-font: "Noto Sans JP', sans-serif";
+}
+body {
+  font-family: var(--text-font);
+  font-size: 1.6rem;
+  color: var(--black);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+ul {
+  list-style: none;
 }
 
-* {
-  box-sizing: border-box;
+button {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.parts-grid {
+  display: grid;
+  grid-template-columns: 1fr min(calc(100vw - (5vw * 2)), 1200px) 1fr;
+}
+
+.parts-grid > * {
+  grid-column: 2;
+}
+.section-padding {
+  padding: 50px 0;
+}
+.section-margin {
+  margin: 30px 0;
 }
