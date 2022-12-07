@@ -1,0 +1,10 @@
+.bcg {
+  background-color: var(--primary-green-01);
+  height: 375px;
+}
+.catch {
+  font-family: var(--catch-font);
+  font-weight: 500;
+  color: var(--white);
+  font-size: clamp(1.5625rem, 0.9125rem + 2.7735vw, 2.6875rem);
+}

@@ -19,7 +19,7 @@
   --site-title-font: "Josefin Sans", sans-serif;
   --section-title-font: "Montserrat", sans-serif;
   --text-font: "游明朝";
-  --catch-font: "Noto Sans JP', sans-serif";
+  --catch-font: 'Noto Sans JP', sans-serif;
 }
 body {
   font-family: var(--text-font);

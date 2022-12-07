@@ -1,0 +1,11 @@
+.herobtn {
+  font-family: var(--catch-font);
+  font-weight: 500;
+  color: var(--white);
+  font-size: clamp(1.1875rem, 0.8986rem + 1.2327vw, 1.6875rem);
+  background-color: var(--accent-clr-01);
+  padding: clamp(0.4375rem, 0.2569rem + 0.7704vw, 0.75rem)
+    clamp(1.25rem, 0.1666rem + 4.6225vw, 3.125rem);
+  /* 12px 50px */
+  border-radius: 24px;
+}
