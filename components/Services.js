@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Title from "./Title";
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <section className="parts-grid section-padding">
+      <Title title={"Services"} />
+    </section>
+  );
+};
 
-export default Services
+export default Services;

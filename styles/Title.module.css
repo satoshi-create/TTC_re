@@ -1,0 +1,12 @@
+.sectionTitle h2 {
+  font-family: var(--section-title-font);
+  font-size: clamp(1.625rem, 1.0111rem + 2.6194vw, 2.6875rem);
+  text-align: center;
+  line-height: 1.8;
+}
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-green-01);
+  margin: 0 auto;
+}
