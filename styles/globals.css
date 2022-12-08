@@ -49,7 +49,7 @@ button {
 
 .parts-grid {
   display: grid;
-  grid-template-columns: 1fr min(calc(100vw - (3vw * 2)), 1200px) 1fr;
+  grid-template-columns: 1fr min(calc(100vw - (3vw * 2)), 1024px) 1fr;
 }
 
 .parts-grid > * {
@@ -64,7 +64,7 @@ button {
 table {
   table-layout: fixed;
   /* border: solid 1px black; */
-  border-spacing: 5px;
+  border-spacing: 10px;
 }
 th,
 td {

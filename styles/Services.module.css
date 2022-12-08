@@ -23,6 +23,7 @@
   font-size: clamp(0.625rem, 0.4444rem + 0.7704vw, 0.9375rem);
   color: var(--accent-clr-01);
   justify-self: flex-end;
+  font-weight: 600;
 }
 .boxs {
   display: flex;

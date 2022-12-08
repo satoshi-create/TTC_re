@@ -9,7 +9,7 @@ import { contact } from "../libs/links";
 
 const Header = () => {
   return (
-    <section className="parts-grid">
+    <section className={`parts-grid ${styles.header}`}>
       <div className={styles.boxUpper}>
         <i>
           <Globe />

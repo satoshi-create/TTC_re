@@ -55,8 +55,8 @@ const Footer = () => {
       <figure className={styles.figure}>
         <Image
           src="/footer.png"
-          width={362}
-          height={243}
+          width={432}
+          height={316}
           className={styles.heroImg}
           alt="footer-image"
         />

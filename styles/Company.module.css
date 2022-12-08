@@ -22,6 +22,9 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .box{
+    justify-content: space-between;
+  }
   .heroImg {
     width: 449px;
     height: 415px;

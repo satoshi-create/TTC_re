@@ -1,5 +1,5 @@
-.sectionTitle{
-  margin-bottom: 45px;
+.sectionTitle {
+  margin-bottom: 30px;
 }
 .sectionTitle h2 {
   font-family: var(--section-title-font);
@@ -12,4 +12,9 @@
   height: 3px;
   background-color: var(--primary-green-01);
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
 }

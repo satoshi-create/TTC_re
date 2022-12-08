@@ -60,9 +60,13 @@
 }
 .figure {
   position: absolute;
-  bottom: 60px;
+  bottom: 100px;
   right: 0;
   mix-blend-mode: darken;
+}
+.heroImg {
+  width: 194px;
+  height: 160px;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -70,10 +74,10 @@
     gap: 50px;
     margin-bottom: 250px;
   }
-  .figure {
-    width: 558px;
-    height: 375px;
-    bottom: 0;
+
+  .heroImg {
+    width: 432px;
+    height: 339px;
   }
   .copyright {
     text-align: center;
@@ -81,8 +85,6 @@
 }
 @media screen and (min-width: 1024px) {
   .figure {
-    width: 624px;
-    height: 453px;
-    right: 100px;
+    right: 300px;
   }
 }

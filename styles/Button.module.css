@@ -8,6 +8,13 @@
     clamp(1.25rem, 0.1666rem + 4.6225vw, 3.125rem);
   /* 12px 50px */
   border-radius: 24px;
+  transition: var(--transition);
+  border: 1px solid var(--accent-clr-01);
+}
+.btn:hover {
+  background-color: var(--white);
+  color: var(--accent-clr-01);
+  border: 1px solid var(--accent-clr-01);
 }
 @media screen and (min-width: 768px) {
   .products > .btn {
