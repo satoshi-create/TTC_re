@@ -4,10 +4,6 @@ import styles from "../styles/Map.module.css";
 import GoogleMapReact from "google-map-react";
 import { MarkerF, useLoadScript, GoogleMap } from "@react-google-maps/api";
 
-const defaultCenter = {
-  lat: 35.02102984136262,
-  lng: 135.74390665569084,
-};
 const mapContainerStyle = {
   height: "100%",
   width: "100%",

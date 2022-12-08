@@ -19,7 +19,6 @@ const Home = () => {
       <Company />
       <Contact />
       <Footer />
-      <Map />
     </React.StrictMode>
   );
 };
