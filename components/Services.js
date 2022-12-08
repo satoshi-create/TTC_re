@@ -14,12 +14,13 @@ const Services = () => {
           const { name, icon, desc, path } = item;
           return (
             <div className={styles.box} key={i}>
-              <h3 className={styles.title}>{name}</h3>
               <i className={styles.icon}>{icon}</i>
-              <p className={styles.desc}>{desc}</p>
-              <Link href={path} className={styles.link}>
-                取り扱い商品一覧はコチラ
-              </Link>
+    
+                <h3 className={styles.title}>{name}</h3>
+                <p className={styles.desc}>{desc}</p>
+                <Link href={path} className={styles.link}>
+                  取り扱い商品一覧はコチラ
+                </Link>
             </div>
           );
         })}
