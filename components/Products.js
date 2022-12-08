@@ -14,9 +14,9 @@ const Products = () => {
         {products.map((item, i) => {
           const { name, icon, productItems } = item;
           return (
-            <React.Fragment key={i}>
+            <div className={styles.cardsBox} key={i}>
               <div className={styles.productsTitle}>
-                <i>{icon}</i>
+                <i className={styles.productItemsIcon}>{icon}</i>
                 <h3>{name}</h3>
               </div>
               <div className={styles.cards}>
@@ -34,14 +34,20 @@ const Products = () => {
                             alt="hero-image"
                           />
                         </figure>
-                        <p className={styles.name}>{name}</p>
-                        <p className={styles.id}>{id}</p>
-                        <p className={styles.merker}>{merker}</p>
-                        <p className={styles.number}>{number}</p>
+                        <div className={styles.info}>
+                          <div className={styles.left}>
+                            <p className={styles.name}>{name}</p>
+                            <p className={styles.id}>{id}</p>
+                            <p className={styles.merker}>{merker}</p>
+                          </div>
+                          <p className={styles.number}>{number}</p>
+                        </div>
                       </Link>
                     </div>
                   );
                 })}
+              </div>
+              <div className={styles.btn}>
                 <Button
                   value={{
                     name: `${name}を見る`,
@@ -50,7 +56,7 @@ const Products = () => {
                   }}
                 />
               </div>
-            </React.Fragment>
+            </div>
           );
         })}
       </section>

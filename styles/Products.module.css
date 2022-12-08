@@ -1,3 +1,13 @@
+.productsTitle {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  justify-content: center;
+}
+.productItemsIcon {
+  display: grid;
+  place-items: center;
+}
 .productsTitle svg {
   width: clamp(1rem, 0.4222rem + 2.4653vw, 2rem);
   height: clamp(1rem, 0.4222rem + 2.4653vw, 2rem);
@@ -7,10 +17,24 @@
   font-family: var(--section-title-font);
   font-size: clamp(1.25rem, 0.9611rem + 1.2327vw, 1.75rem);
 }
+.cardsBox {
+  margin: 40px 0 60px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 20px 0;
+}
 .card {
   font-family: var(--section-title-font);
   box-shadow: 6px 6px 10px var(--grey-light);
   padding: 18px 13px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 .name {
   font-size: 16px;
@@ -27,4 +51,32 @@
 .number {
   font-size: 14px;
   font-weight: 500;
+  align-self: flex-end;
+}
+.btn {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    margin: 20px 0 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  .card {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    justify-content: space-between;
+  }
+  .card {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33% - 2rem);
+  }
 }

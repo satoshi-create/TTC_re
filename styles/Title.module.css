@@ -1,3 +1,6 @@
+.sectionTitle{
+  margin-bottom: 45px;
+}
 .sectionTitle h2 {
   font-family: var(--section-title-font);
   font-size: clamp(1.625rem, 1.0111rem + 2.6194vw, 2.6875rem);
