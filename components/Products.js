@@ -30,8 +30,16 @@ const Products = () => {
                             src={src}
                             width={266}
                             height={204}
+                            sizes="100vw"
                             className={styles.heroImg}
-                            alt="hero-image"
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                            }}
+                            alt={name}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
                           />
                         </figure>
                         <div className={styles.info}>

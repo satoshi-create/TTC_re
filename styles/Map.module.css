@@ -1,21 +1,17 @@
 .figure {
-  /* margin: 0 -3vw; */
-  width: 345px;
-  height: 375px;
-}
-.heroImg {
-  width: 345px;
+  width: 100vw;
+  align-self: center;
   height: 375px;
 }
 @media screen and (min-width: 768px) {
-  .heroImg {
-    width: 375px;
-    height: 415px;
+  .figure {
+    width: 450px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .heroImg {
-    width: 449px;
-    height: 415px;
+  .figure {
+    width: 500px;
+    height: 500px;
   }
 }
