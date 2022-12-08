@@ -2,7 +2,6 @@
   background: linear-gradient(134deg, #3baba3, #eefff4);
   height: 434px;
   display: grid;
-
   align-items: center;
   justify-items: right;
   text-align: right;
@@ -18,11 +17,37 @@
   font-size: clamp(1.5625rem, 0.9125rem + 2.7735vw, 2.6875rem);
   margin-bottom: 60px;
   padding-right: 16px;
+  line-height: 1.6;
 }
 .figure {
-  grid-area: overlay;
   position: absolute;
   bottom: 55px;
   left: 0;
   mix-blend-mode: darken;
+}
+.heroImg {
+  width: 250px;
+  height: 200px;
+}
+@media screen and (min-width: 768px) {
+  .catch {
+    margin-bottom: 36px;
+    padding-right: 24px;
+  }
+  .figure {
+    bottom: 10px;
+  }
+  .heroImg {
+    width: 418px;
+    height: 342px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bcg {
+    height: 563px;
+  }
+  .heroImg {
+    width: 550px;
+    height: 450px;
+  }
 }
