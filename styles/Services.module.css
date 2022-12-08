@@ -21,9 +21,13 @@
 }
 .link {
   font-size: clamp(0.625rem, 0.4444rem + 0.7704vw, 0.9375rem);
-  color: var(--accent-clr-01);
+  color: var(--accent-clr-02);
   justify-self: flex-end;
   font-weight: 600;
+  transition: var(--transition);
+}
+.link:hover {
+  opacity: 0.6;
 }
 .boxs {
   display: flex;

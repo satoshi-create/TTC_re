@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/Company.module.css";
 import Title from "./Title";
-import Image from "next/image";
+
+import Map from "./Map";
 
 const Company = () => {
   return (
@@ -52,15 +53,7 @@ const Company = () => {
             </tr>
           </tbody>
         </table>
-        <figure className={styles.figure}>
-          <Image
-            src="/googleMap.png"
-            width={345}
-            height={375}
-            className={styles.heroImg}
-            alt="hero-image"
-          />
-        </figure>
+        <Map />
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import { ShoppingCart, ShoppingBag, Truck } from "react-feather";
 const products = [
   {
-    name: "販売製品情報",
+    name: "販売製品",
     icon: <ShoppingCart />,
     productItems: [
       {
@@ -31,7 +31,7 @@ const products = [
     ],
   },
   {
-    name: "レンタル製品情報",
+    name: "レンタル製品",
     icon: <Truck />,
     productItems: [
       {
@@ -61,7 +61,7 @@ const products = [
     ],
   },
   {
-    name: "買取製品情報",
+    name: "買取製品",
     icon: <ShoppingBag />,
     productItems: [
       {

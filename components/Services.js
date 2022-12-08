@@ -19,7 +19,7 @@ const Services = () => {
               <h3 className={styles.title}>{name}</h3>
               <p className={styles.desc}>{desc}</p>
               <Link href={path} className={styles.link}>
-                &gt;&gt; 取り扱い商品一覧はコチラ
+                &gt;&gt; お取り扱い製品一覧はコチラ
               </Link>
             </div>
           );

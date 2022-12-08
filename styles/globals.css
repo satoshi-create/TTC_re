@@ -14,6 +14,7 @@
   --grey-dark: #7e7e7e;
   --grey-light: #9e9e9e;
   --accent-clr-01: #ff9692;
+  --accent-clr-02: #ff2323;
   --primary-green-01: #57b9b0;
   --primary-green-02: #7ac8be;
   --primary-green-03: #cef0e4;
@@ -69,7 +70,7 @@ table {
 th,
 td {
   font-family: var(--section-title-font);
-  font-size: 14px;
+  font-size: clamp(0.875rem, 0.8389rem + 0.1541vw, 0.9375rem);
   /* font-weight: 400; */
   /* border: solid 1px black; */
   text-align: start;

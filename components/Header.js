@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import styles from "../styles/Header.module.css";
-import { Globe, Mail, Phone, Menu } from "react-feather";
+import { Globe, Menu } from "react-feather";
 import Link from "next/link";
 import Meta from "../libs/SiteMeta";
 import Image from "next/image";
@@ -23,20 +23,20 @@ const Header = () => {
   return (
     <section className={`parts-grid ${styles.header} ${styles[stickyClass]}`}>
       <div className={styles.boxUpper}>
-        <i>
+        <i className={styles.language}>
           <Globe />
         </i>
         {contact.map((item, i) => {
           const { path, icon } = item;
           return (
-            <Link href={path} key={i}>
+            <Link href={path} key={i} className={styles.contactLink}>
               <i>{icon}</i>
             </Link>
           );
         })}
       </div>
       <div className={styles.boxUnder}>
-        <div className={styles.titleBox}>
+        <div className={styles.titleBox}> 
           <Image
             src={Meta.siteIcon}
             width={22}

@@ -50,7 +50,7 @@ const Products = () => {
               <div className={styles.btn}>
                 <Button
                   value={{
-                    name: `${name}を見る`,
+                    name: `${name}一覧を見る`,
                     path: "/",
                     section: "products",
                   }}

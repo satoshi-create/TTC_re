@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "../styles/Links.module.css";
+import styles from "../styles/NavLinks.module.css";
 import { links } from "../libs/links";
 
 const NavLinks = () => {

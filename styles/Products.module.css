@@ -31,7 +31,13 @@
 .card {
   font-family: var(--section-title-font);
   box-shadow: 6px 6px 10px var(--grey-light);
-  padding: 18px 13px;
+  padding: 18px 15px;
+  transition: var(--transition);
+}
+.card:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+  /* background-color: var(--primary-green-03); */
 }
 .info {
   display: flex;

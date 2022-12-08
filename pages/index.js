@@ -7,10 +7,10 @@ import Products from "../components/Products";
 import Company from "../components/Company";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
+import Map from "../components/Map";
 const Home = () => {
   return (
-    <>
+    <React.StrictMode>
       <Header />
       <Hero />
       <About />
@@ -19,7 +19,8 @@ const Home = () => {
       <Company />
       <Contact />
       <Footer />
-    </>
+      <Map />
+    </React.StrictMode>
   );
 };
 
