@@ -10,7 +10,7 @@ const NavLinks = () => {
         const { path, name } = item;
         return (
           <li key={i}>
-            <Link href={path}>{name}</Link>
+            <Link href={path} className={styles.name}>{name}</Link>
           </li>
         );
       })}

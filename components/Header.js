@@ -42,8 +42,8 @@ const Header = () => {
               <Menu className={styles.menuIcon} />
             </button>
           </div>
-        </nav>
         <NavLinks />
+        </nav>
       </div>
     </section>
   );

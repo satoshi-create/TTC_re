@@ -48,7 +48,7 @@ button {
 
 .parts-grid {
   display: grid;
-  grid-template-columns: 15px min(calc(100vw - (5vw * 2)), 1200px) 15px;
+  grid-template-columns: 1fr min(calc(100vw - (3vw * 2)), 1200px) 1fr;
 }
 
 .parts-grid > * {
