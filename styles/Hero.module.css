@@ -1,19 +1,28 @@
 .bcg {
-  background-color: var(--primary-green-01);
+  background: linear-gradient(134deg, #3baba3, #eefff4);
   height: 434px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  display: grid;
+
+  align-items: center;
+  justify-items: right;
   text-align: right;
-  width: 6;
+  position: relative;
 }
-.catch {
-  margin-bottom: 60px;
+.box {
+  z-index: 101;
 }
 .catch {
   font-family: var(--catch-font);
   font-weight: 500;
   color: var(--white);
   font-size: clamp(1.5625rem, 0.9125rem + 2.7735vw, 2.6875rem);
+  margin-bottom: 60px;
+  padding-right: 16px;
+}
+.figure {
+  grid-area: overlay;
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  mix-blend-mode: darken;
 }
