@@ -1,0 +1,29 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.figure {
+  /* margin: 0 -3vw; */
+}
+.heroImg {
+  width: 345px;
+  height: 375px;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .heroImg {
+    width: 375px;
+    height: 415px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heroImg {
+    width: 449px;
+    height: 415px;
+  }
+}
