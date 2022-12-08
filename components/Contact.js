@@ -15,24 +15,26 @@ import {
 const Contact = () => {
   return (
     <section className="parts-grid section-padding">
-      <Title title={"Company"} />
-      <FormControl isRequired>
-        <Input placeholder="名前" className={styles.input} />
-      </FormControl>
-      <FormControl isRequired>
-        <Input placeholder="メールアドレス" className={styles.input} />
-      </FormControl>
-      <FormControl>
-        <Select placeholder="お問い合わせ内容" className={styles.input}>
-          <option>採用について</option>
-          <option>ビジネスについて</option>
-        </Select>
-      </FormControl>
-      <Textarea
-        placeholder="メッセージ"
-        size="sm"
-        className={`${styles.input} ${styles.textarea}`}
-      />
+      <Title title={"Contact"} />
+      <div className={styles.form}>
+        <FormControl isRequired>
+          <Input placeholder="お名前" className={styles.input} />
+        </FormControl>
+        <FormControl isRequired>
+          <Input placeholder="メールアドレス" className={styles.input} />
+        </FormControl>
+        <FormControl>
+          <Select placeholder="お問い合わせ内容" className={styles.input}>
+            <option>採用について</option>
+            <option>ビジネスについて</option>
+          </Select>
+        </FormControl>
+        <Textarea
+          placeholder="メッセージ"
+          size="sm"
+          className={`${styles.input} ${styles.textarea}`}
+        />
+      </div>
     </section>
   );
 };

@@ -13,3 +13,18 @@
 .textarea {
   height: 152px;
 }
+@media screen and (min-width: 768px) {
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .textarea {
+  height: 377px;
+}
+}
+@media screen and (min-width: 1024px) {
+  .form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
