@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import styles from "../styles/Header.module.css";
 import { Globe, Mail, Phone, Menu } from "react-feather";
 import Link from "next/link";
@@ -8,8 +8,20 @@ import NavLinks from "./NavLinks";
 import { contact } from "../libs/links";
 
 const Header = () => {
+  const [stickyClass, setStickyClass] = useState("");
+  console.log(stickyClass);
+
+  const stickNavbar = () => {
+    let windowHeight = window.scrollY;
+    windowHeight > 80 ? setStickyClass("header-fixed") : setStickyClass("");
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+  }, []);
+
   return (
-    <section className={`parts-grid ${styles.header}`}>
+    <section className={`parts-grid ${styles.header} ${styles[stickyClass]}`}>
       <div className={styles.boxUpper}>
         <i>
           <Globe />
@@ -42,7 +54,7 @@ const Header = () => {
               <Menu className={styles.menuIcon} />
             </button>
           </div>
-        <NavLinks />
+          <NavLinks />
         </nav>
       </div>
     </section>

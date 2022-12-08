@@ -7,7 +7,7 @@
 }
 
 :root {
-  --bcg:linear-gradient(134deg, #3baba3, #eefff4);
+  --bcg: #3baba3, #eefff4;
   --transition: all 0.3s linear;
   --white: #ffffff;
   --black: #1c1c1c;

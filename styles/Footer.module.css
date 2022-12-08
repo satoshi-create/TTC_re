@@ -1,5 +1,5 @@
 .bcg {
-  background: var(--bcg);
+  background: linear-gradient(300deg, var(--bcg));
   height: auto;
   padding: 50px 10px 0;
   position: relative;
@@ -81,6 +81,9 @@
   }
   .copyright {
     text-align: center;
+  }
+  .address {
+    padding-left: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
