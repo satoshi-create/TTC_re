@@ -5,6 +5,10 @@
   border: 1px solid var(--grey-light);
   padding: 14px;
   border-radius: 17px;
+  transition: var(--transition);
+}
+.box:hover {
+  background-color: var(--primary-green-03);
 }
 .title {
   font-size: clamp(0.875rem, 0.2611rem + 2.6194vw, 1.9375rem);
