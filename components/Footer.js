@@ -6,8 +6,8 @@ import Image from "next/image";
 import { footerLinks } from "../libs/links";
 const Footer = () => {
   return (
-    <section className={`parts-grid section-padding ${styles.bcg}`}>
-      <nav>
+    <section className={`parts-grid  ${styles.bcg}`}>
+      <nav className={styles.nav}>
         {footerLinks.map((item, i) => {
           const { name, subItem, box } = item;
           return (
@@ -17,8 +17,10 @@ const Footer = () => {
                 {subItem.map((item, i) => {
                   const { name, path } = item;
                   return (
-                    <li key={i}>
-                      <Link href={path} className={styles.navname}>{name}</Link>
+                    <li key={i} className={styles.navList}>
+                      <Link href={path} className={styles.navname}>
+                        {name}
+                      </Link>
                     </li>
                   );
                 })}
@@ -28,8 +30,8 @@ const Footer = () => {
         })}
       </nav>
       <div className={styles.siteInfo}>
-        <div className={styles.titleBox}>
-          <Link href="/">
+        <Link href="/">
+          <div className={styles.titleBox}>
             <Image
               src={Meta.siteIcon}
               width={22}
@@ -38,23 +40,27 @@ const Footer = () => {
               alt={"favicon"}
             />
             <p className={styles.siteTitle}>{Meta.siteTitle}</p>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <p className={styles.address}>
-          〒160-0023 東京都新宿区西新宿 6-12-1 パークウエスト13F
+          〒160-0023
+          <br /> 東京都新宿区西新宿 6-12-1 <br />
+          パークウエスト13F
         </p>
-        <small className={styles.copyright}>
-          ©Copyright 2005-2022 (TTC Group) Trust Technology Co, LTD All rights
-          reserved.
-        </small>
       </div>
-      <Image
-        src="/footer.png"
-        width={362}
-        height={243}
-        className={styles.heroImg}
-        alt="footer-image"
-      />
+      <small className={styles.copyright}>
+        ©Copyright 2005-2022 (TTC Group) Trust Technology Co, LTD All rights
+        reserved.
+      </small>
+      <figure className={styles.figure}>
+        <Image
+          src="/footer.png"
+          width={362}
+          height={243}
+          className={styles.heroImg}
+          alt="footer-image"
+        />
+      </figure>
     </section>
   );
 };

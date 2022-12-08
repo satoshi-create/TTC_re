@@ -1,5 +1,5 @@
 .bcg {
-  background: linear-gradient(134deg, #3baba3, #eefff4);
+  background: var(--bcg);
   height: 434px;
   display: grid;
   align-items: center;
