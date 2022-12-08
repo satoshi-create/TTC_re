@@ -25,15 +25,15 @@ const Header = () => {
       </div>
       <div className={styles.boxUnder}>
         <div className={styles.titleBox}>
-          <Link href="/">
-            <Image
-              src={Meta.siteIcon}
-              width={22}
-              height={22}
-              className={styles.favicon}
-              alt={"favicon"}
-            />
-            <p className={styles.siteTitle}>{Meta.siteTitle}</p>
+          <Image
+            src={Meta.siteIcon}
+            width={22}
+            height={22}
+            className={styles.favicon}
+            alt={"favicon"}
+          />
+          <Link href="/" className={styles.siteTitle}>
+            {Meta.siteTitle}
           </Link>
         </div>
         <nav className={styles.nav}>
