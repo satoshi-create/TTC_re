@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 0;
+  padding: 20px 0 10px;
 }
 .boxUpper {
   display: flex;
@@ -37,7 +37,8 @@
 }
 .siteTitle {
   font-family: var(--site-title-font);
-  font-size: clamp(1.3125rem, 0.6986rem + 2.6194vw, 2.375rem);
+  font-size: clamp(1.3125rem, 1.0597rem + 1.0786vw, 1.75rem);
+  /* font-size: clamp(1.3125rem, 0.6986rem + 2.6194vw, 2.375rem); */
   letter-spacing: -0.5px;
 }
 .menuIcon {
